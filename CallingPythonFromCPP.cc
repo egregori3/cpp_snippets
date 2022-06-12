@@ -36,7 +36,7 @@ void CallPython(string PythonModuleName, string PythonFunctionName)
 	PyErr_Print();
 
 	printf("Module found\n");
-	printf("Hit any key to find function %ws from Python module %ws - %s\n", funcname, cwd);
+	printf("Hit any key to find function %s from Python module %ws\n", funcname, cwd);
 	system("pause");
 
 	// Get the address of the particular Python function in the imported module
@@ -47,7 +47,7 @@ void CallPython(string PythonModuleName, string PythonFunctionName)
 	PyErr_Print();
 
 	printf("Function found\n");
-	printf("Hit any key to call function %ws from Python module %ws - %s\n", funcname, cwd);
+	printf("Hit any key to call function %s from Python module %ws\n", funcname, cwd);
 	system("pause");
 
 	// Call a callable Python object callable, with arguments given by the tuple args. 
@@ -80,7 +80,6 @@ int main()
 /* Python code
 import re
 import string
-
 def helloworld():
-    print("Hello from Python!")
+	print("Hello from Python!")
 */
